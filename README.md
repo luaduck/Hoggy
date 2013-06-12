@@ -12,6 +12,7 @@ Hoggy needs the following Python modules:
 * SQLAlchemy
 * BeautifulSoup
 * Requests
+* Yet Another Plugin System (YAPSY)
 
 You can get all of the above really easily from PIP, so it's suggested that you run Hoggy in its own virtualenv (if you know how).
 
