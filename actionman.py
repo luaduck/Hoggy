@@ -35,28 +35,7 @@ class command(object):
         raise NotImplementedError
 
 class Commander(object):
-    actions = {
-        '!hoggy':hoggy,
-        '!guns' : guns,
-        '!rifle': rifle,
-        '!pickle': pickle,
-        '!eject':eject,
-        '!help': print_help,
-        '!no':no,
-        '!grab': grab,
-        '!blame' : blame,
-        '!wire' : wire,
-        '!hug' : hug,
-        '!ron' : ron,
-        '!thanks' : thanks,
-        '!ron': ron,
-        '!bolt': lightning,
-        '!new': new,
-        '!when': when,
-        '!settime':settime,
-        '!ud': urbandictionary,
-        '!ping':ping
-    }
+    actions = {}
     for plugin in plugman.getAllPlugins():
         actions[plugin.plugin_object.trigger] = plugin.plugin_object
 

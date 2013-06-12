@@ -10,7 +10,7 @@ import os
 import ConfigParser
 import logging
 
-import actions
+import actionman
 
 try:
     config = ConfigParser.RawConfigParser()
@@ -51,7 +51,7 @@ class HoggyBot(irc.IRCClient):
     nickname = config.get('irc', 'nick')
 
     def __init__(self, *args, **kwargs):
-        self.commander = actions.Commander(self)
+        self.commander = actionman.Commander(self)
         self.grabber = Grabber()
 
     # callbacks for events
