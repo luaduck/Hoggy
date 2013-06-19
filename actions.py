@@ -148,7 +148,7 @@ class no(command):
         
 class backpedal(command):
     longdesc = "NAH NAH NAH NAH-NAAAAAAAAAAAAAAAAAAAAA NAH."
-    shortdesc = "In case of XBone sightings."
+    shortdesc = "In case of XBone sighting."
     
     @classmethod
     def execute(cls, *args, **kwargs):
