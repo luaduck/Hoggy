@@ -145,6 +145,14 @@ class no(command):
     @classmethod
     def execute(cls, *args, **kwargs):
         return "http://nooooooooooooooo.com/"
+        
+class backpedal(command):
+    longdesc = "NAH NAH NAH NAH-NAAAAAAAAAAAAAAAAAAAAA NAH."
+    shortdesc = "In case of XBone sightings."
+    
+    @classmethod
+    def execute(cls, *args, **kwargs):
+        return "http://www.youtube.com/watch?v=ubU-dB8B-94"
 
 class blame(command):
     longdesc = "No seriously, fuck that guy."
